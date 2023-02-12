@@ -16,7 +16,6 @@ let localStream: MediaStream;
 let remoteStream: MediaStream;
 
 const Home: NextPage = () => {
-  console.log("home");
   const videoRef1 = useRef<HTMLVideoElement | null>(null);
   const videoRef2 = useRef<HTMLVideoElement | null>(null);
 
@@ -106,7 +105,7 @@ const Home: NextPage = () => {
     textRef2.current!.value = JSON.stringify(answer);
   };
 
-  const addAnswer = async () => {
+  const addAnswer = () => {
     const answer = textRef2.current!.value;
     if (!answer) return;
 
