@@ -141,7 +141,7 @@ const Home: NextPage = () => {
           <Textarea ref={textRef1} />
           <Button onClick={createAnswer}>create Answer</Button>
           <Textarea ref={textRef2} />
-          <Button onClick={addAnswer}>create Answer</Button>
+          <Button onClick={addAnswer}>Answer</Button>
         </div>
       </main>
     </>
